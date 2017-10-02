@@ -2,7 +2,7 @@
 it's base django project
 
 # make some changes
-- sudo cp to /etc/supervisor/conf.d/<name_of_project>.conf
+- sudo cp project_name.conf to /etc/supervisor/conf.d/<name_of_project>.conf
 - sudo cp my_conf.conf to /etc/nginx/sites-enabled/my_conf.conf
 
 ## How to deploy server:
