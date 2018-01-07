@@ -115,7 +115,7 @@ $ sudo mysql_secure_installation
 ```
 $ sudo mysql -u root -p
 > CREATE DATABASE my_database CHARACTER SET UTF8;
-> CREATE USER <username>@localhost IDENTIFIED BY 'password'
+> CREATE USER <username>@localhost IDENTIFIED BY 'password';
 > GRANT ALL PRIVILEGES ON my_database.* TO '<username>'@'localhost';
 > FLUSH PRIVILEGES;
 > exit;
@@ -123,9 +123,9 @@ $ sudo mysql -u root -p
 ## Let's return to deploying web-app:
 9) Set database Django-app
 ```
-$ python manage.py migrate
-$ python manage.py makemigrations
-$ python manage.py createsuperuser
+(<name_of_venv>) python manage.py migrate
+(<name_of_venv>) python manage.py makemigrations
+(<name_of_venv>) python manage.py createsuperuser
 ```
 10) Collect static files in Django-app
 ```
