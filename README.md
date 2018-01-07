@@ -100,7 +100,7 @@ DATABASES = {
 }
 TIME_ZONE='Europe/Moscow'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR,'<name_of_app>/static')
 ```
 ### How to install and run Mysql server:
 1) If version of mysql < 5.7, you need to run:
@@ -114,9 +114,9 @@ $ sudo mysql_secure_installation
 3) Creatre db for Django-app:
 ```
 $ sudo mysql -u root -p
-> CREATE DATABASE my_database CHARACTER SET UTF8;
+> CREATE DATABASE <djangoapp_db> CHARACTER SET UTF8;
 > CREATE USER <username>@localhost IDENTIFIED BY 'password';
-> GRANT ALL PRIVILEGES ON my_database.* TO '<username>'@'localhost';
+> GRANT ALL PRIVILEGES ON <djangoapp_db>.* TO '<username>'@'localhost';
 > FLUSH PRIVILEGES;
 > exit;
 ```
