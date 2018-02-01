@@ -39,6 +39,9 @@ and then activate changes:
 $ sudo locale-gen en_US en_US.UTF-8
 ($ sudo locale-gen en_US.UTF-8)
 $ sudo dpkg-reconfigure locales
+ ($export LC_ALL="en_US.UTF-8"
+  $export LANGUAGE="en_US.UTF-8"
+  $locale)
 ```
 5) To connect to server via ssh without password, need to do on your computer:
 ```
